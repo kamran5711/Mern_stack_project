@@ -22,4 +22,8 @@ const UserSchema = new mongoose.Schema({
     }
 });
 
+<<<<<<< HEAD
 module.exports = User = mongoose.model('users', UserSchema);
+=======
+module.exports = User = mongoose.model('user', UserSchema);
+>>>>>>> f88cd592173f778c2e3c6905c8e8fc906f04baf5

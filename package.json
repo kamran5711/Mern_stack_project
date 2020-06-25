@@ -8,8 +8,12 @@
     "start": "node server",
     "server": "nodemon server",
     "client": "npm start --prefix client",
+<<<<<<< HEAD
     "dev": "concurrently \"npm start\" \"npm run client\"",
     "horeku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+=======
+    "dev": "concurrently \"npm start\" \"npm run client\""
+>>>>>>> f88cd592173f778c2e3c6905c8e8fc906f04baf5
   },
   "author": "kamran",
   "license": "MIT",

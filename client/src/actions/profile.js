@@ -1,6 +1,10 @@
 import axios from 'axios';
 import { setAlert } from './alert';
+<<<<<<< HEAD
 import { GET_PROFILE, GET_PROFILES, PROFILE_ERROR, UPDATE_PROFILE, CLEAR_PROFILE, ACCOUNT_DELETED, GET_REPOS } from '../actions/types';
+=======
+import { GET_PROFILE, PROFILE_ERROR, UPDATE_PROFILE } from '../actions/types';
+>>>>>>> f88cd592173f778c2e3c6905c8e8fc906f04baf5
 
 // get current user logged in profile
 export const getCurrentProfile = () => async dispatch => {
@@ -17,6 +21,7 @@ export const getCurrentProfile = () => async dispatch => {
         })
     }
 }
+<<<<<<< HEAD
 
 // get all profiles list
 export const getProfiles = () => async dispatch => {
@@ -66,6 +71,8 @@ export const getGithubRepos = username => async dispatch => {
     }
 }
 
+=======
+>>>>>>> f88cd592173f778c2e3c6905c8e8fc906f04baf5
 // Create or update profile 
 export const createProfile = (formData, history, edit = false) => async dispatch =>{
     try {
@@ -153,6 +160,7 @@ export const addEducation = (formData, history) => async dispatch => {
             payload: { msg: err.response.statusText, status: err.response.status }
         })
     }
+<<<<<<< HEAD
 }
 
 // Delete Experience
@@ -225,4 +233,6 @@ export const deleteAccount = () => async dispatch => {
             })
         }
     }
+=======
+>>>>>>> f88cd592173f778c2e3c6905c8e8fc906f04baf5
 }
