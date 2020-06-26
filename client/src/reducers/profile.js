@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 import { GET_PROFILE, PROFILE_ERROR, CLEAR_PROFILE, UPDATE_PROFILE, GET_PROFILES, GET_REPOS } from "../actions/types";
-=======
-import { GET_PROFILE, PROFILE_ERROR, CLEAR_PROFILE, UPDATE_PROFILE } from "../actions/types";
->>>>>>> f88cd592173f778c2e3c6905c8e8fc906f04baf5
 
 const initialState = {
     profile: null,
@@ -21,15 +17,12 @@ export default function(state = initialState, action){
                 profile: payload,
                 loading: false
             }
-<<<<<<< HEAD
         case GET_PROFILES:
             return {
                 ...state,
                 profiles:payload,
                 loading:false
             }
-=======
->>>>>>> f88cd592173f778c2e3c6905c8e8fc906f04baf5
         case PROFILE_ERROR:
             return {
                 ...state,
@@ -43,7 +36,6 @@ export default function(state = initialState, action){
                 repos: [],
                 loading: false
             }
-<<<<<<< HEAD
         case GET_REPOS:
             return {
                 ...state,
@@ -52,11 +44,5 @@ export default function(state = initialState, action){
             }
         default:
             return state
-=======
-        default:
-            return {
-                state
-            }
->>>>>>> f88cd592173f778c2e3c6905c8e8fc906f04baf5
     }
 }

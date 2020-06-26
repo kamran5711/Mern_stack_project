@@ -1,9 +1,6 @@
 const express = require('express');
-<<<<<<< HEAD
 const request = require('request');
 const config = require('config');
-=======
->>>>>>> f88cd592173f778c2e3c6905c8e8fc906f04baf5
 const router = express.Router();
 const Profile = require('../../models/Profile');
 const User = require('../../models/User');
@@ -238,7 +235,6 @@ router.delete('/education/:edu_id', auth, async(req, res)=>{
     }
 });
 
-<<<<<<< HEAD
 
 // @route   Get api/profile/github/:username
 // @desc    Get user repos from github
@@ -266,6 +262,4 @@ router.get('/github/:username', async(req, res)=>{
     }
 });
 
-=======
->>>>>>> f88cd592173f778c2e3c6905c8e8fc906f04baf5
 module.exports = router;

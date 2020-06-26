@@ -55,11 +55,7 @@ const EditProfile = ({
         instagram: loading || !profile.social ? '' : profile.social.instagram,
         linkedin: loading || !profile.social ? '' : profile.social.linkedin
       });
-<<<<<<< HEAD
     }, [loading, getCurrentProfile]);
-=======
-    }, [loading]);
->>>>>>> f88cd592173f778c2e3c6905c8e8fc906f04baf5
 
     const onChange = e => {
         setFormData({ ...formData, [e.target.name]: e.target.value });

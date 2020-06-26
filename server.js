@@ -1,9 +1,6 @@
 const express = require("express");
 const connectDB = require('./config/db');
-<<<<<<< HEAD
 const path = require('path');
-=======
->>>>>>> f88cd592173f778c2e3c6905c8e8fc906f04baf5
 
 const app = express();
 
@@ -18,7 +15,6 @@ app.use('/api/auth', require('./routes/api/auth') );
 app.use('/api/profile', require('./routes/api/profile') );
 app.use('/api/posts', require('./routes/api/posts') );
 
-<<<<<<< HEAD
 
 // serve static assets in production
 if(process.env.NODE_ENV === 'production'){
@@ -34,8 +30,6 @@ if(process.env.NODE_ENV === 'production'){
     })
 }
 
-=======
->>>>>>> f88cd592173f778c2e3c6905c8e8fc906f04baf5
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, ()=>{
     console.log(`Server Running on port: ${PORT}.`);

@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 import { REGISTER_FAIL, REGISTER_SUCCESS,USER_LOADED, AUTH_ERROR, LOGIN_SUCCESS, LOGIN_FAIL, LOGOUT, CLEAR_PROFILE, ACCOUNT_DELETED } from "../actions/types";
-=======
-import { REGISTER_FAIL, REGISTER_SUCCESS,USER_LOADED, AUTH_ERROR, LOGIN_SUCCESS, LOGIN_FAIL, LOGOUT, CLEAR_PROFILE } from "../actions/types";
->>>>>>> f88cd592173f778c2e3c6905c8e8fc906f04baf5
 
 const initialState = {
     token: localStorage.getItem('token'),
@@ -35,10 +31,7 @@ export default function(state = initialState, action){
         case LOGIN_FAIL:
         case LOGOUT:
         case CLEAR_PROFILE:
-<<<<<<< HEAD
         case ACCOUNT_DELETED:
-=======
->>>>>>> f88cd592173f778c2e3c6905c8e8fc906f04baf5
             localStorage.removeItem('token');
             return{
                 ...state,
