@@ -208,7 +208,6 @@ router.put('/education',[auth,[
     try {
         const profile = await Profile.findOne({user:req.user.id});
         profile.education.unshift(newEdu);
-        console.log(profile);
         await profile.save();
         return res.json(profile);
     } catch (err) {
