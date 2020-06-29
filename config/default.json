@@ -1,0 +1,6 @@
+{
+    "mongoURI" : "mongodb://localhost:27017/mern_project",
+    "jwtSecret" : "i_love_mern_stack_now_a_days",
+    "githubClientId": "ffe196b3789d3bfbcc88",
+    "githbSecret": "b8f2ebc53e8ede5ad09458ad7b962372abdb5ccd"
+}
